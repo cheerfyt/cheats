@@ -1,0 +1,513 @@
+
+% BTC, BTC-RPC, getbestblockhash
+# Returns the hash of the best (tip) block in the longest blockchain.
+bitcoin-cli getbestblockhash
+
+% BTC, BTC-RPC, getblock
+# If verbosity is 0, returns a string that is serialized, hex-encoded data for block ‘hash’.
+bitcoin-cli getblock <arg_1>
+
+% BTC, BTC-RPC, getblockchaininfo
+# Returns an object containing various state info regarding blockchain processing.
+bitcoin-cli getblockchaininfo
+
+% BTC, BTC-RPC, getblockcount
+# Returns the number of blocks in the longest blockchain.
+bitcoin-cli getblockcount
+
+% BTC, BTC-RPC, getblockhash
+# Returns hash of block in best-block-chain at height provided.
+bitcoin-cli getblockhash <arg_1>
+
+% BTC, BTC-RPC, getblockheader
+# If verbose is false, returns a string that is serialized, hex-encoded data for blockheader ‘hash’.
+bitcoin-cli getblockheader <arg_1>
+
+% BTC, BTC-RPC, getblockstats
+# Compute per block statistics for a given window. All amounts are in satoshis.
+bitcoin-cli getblockstats <arg_1> <arg_2>
+
+% BTC, BTC-RPC, getchaintips
+# Return information about all known tips in the block tree, including the main chain as well as orphaned branches.
+bitcoin-cli getchaintips
+
+% BTC, BTC-RPC, getchaintxstats
+# Compute statistics about the total number and rate of transactions in the chain.
+bitcoin-cli getchaintxstats
+
+% BTC, BTC-RPC, getdifficulty
+# Returns the proof-of-work difficulty as a multiple of the minimum difficulty.
+bitcoin-cli getdifficulty
+
+% BTC, BTC-RPC, getmempoolancestors
+# If txid is in the mempool, returns all in-mempool ancestors.
+bitcoin-cli getmempoolancestors <arg_1>
+
+% BTC, BTC-RPC, getmempooldescendants
+# If txid is in the mempool, returns all in-mempool descendants.
+bitcoin-cli getmempooldescendants <arg_1>
+
+% BTC, BTC-RPC, getmempoolentry
+# Returns mempool data for given transaction
+bitcoin-cli getmempoolentry <arg_1>
+
+% BTC, BTC-RPC, getmempoolinfo
+# Returns details on the active state of the TX memory pool.
+bitcoin-cli getmempoolinfo
+
+% BTC, BTC-RPC, getrawmempool
+# Returns all transaction ids in memory pool as a json array of string transaction ids.
+bitcoin-cli getrawmempool <arg_1>
+
+% BTC, BTC-RPC, gettxout
+# Returns details about an unspent transaction output.
+bitcoin-cli gettxout
+
+% BTC, BTC-RPC, gettxoutproof
+# Returns a hex-encoded proof that “txid” was included in a block.
+bitcoin-cli gettxoutproof
+
+% BTC, BTC-RPC, gettxoutsetinfo
+# Returns statistics about the unspent transaction output set.
+bitcoin-cli gettxoutsetinfo
+
+% BTC, BTC-RPC, preciousblock
+# Treats a block as if it were received before others with the same work.
+bitcoin-cli preciousblock <arg_1>
+
+% BTC, BTC-RPC, pruneblockchain
+#
+bitcoin-cli pruneblockchain <arg_1>
+
+% BTC, BTC-RPC, savemempool
+# Dumps the mempool to disk. It will fail until the previous dump is fully loaded.
+bitcoin-cli savemempool
+
+% BTC, BTC-RPC, scantxoutset
+# EXPERIMENTAL warning: this call may be removed or changed in future releases.
+bitcoin-cli scantxoutset
+
+% BTC, BTC-RPC, verifychain
+# Verifies blockchain database.
+bitcoin-cli verifychain
+
+% BTC, BTC-RPC, verifytxoutproof
+# Verifies that a proof points to a transaction in a block, returning the transaction it commits to and throwing an RPC error if the block is not in our best chain
+bitcoin-cli verifytxoutproof
+
+% BTC, BTC-RPC, getmemoryinfo
+# Returns an object containing information about memory usage.
+bitcoin-cli getmemoryinfo
+
+% BTC, BTC-RPC, getrpcinfo
+# Returns details of the RPC server.
+bitcoin-cli getrpcinfo
+
+% BTC, BTC-RPC, help
+# List all commands, or get help for a specified command.
+bitcoin-cli help
+
+% BTC, BTC-RPC, logging
+# Gets and sets the logging configuration.
+bitcoin-cli logging <arg_1> <arg_2>
+
+% BTC, BTC-RPC, stop
+# Stop Bitcoin server.
+bitcoin-cli stop
+
+% BTC, BTC-RPC, uptime
+# Returns the total uptime of the server.
+bitcoin-cli uptime
+
+% BTC, BTC-RPC, generate
+# Mine up to nblocks blocks immediately (before the RPC call returns) to an address in the wallet.
+bitcoin-cli generate
+
+% BTC, BTC-RPC, generatetoaddress
+# Mine blocks immediately to a specified address (before the RPC call returns)
+bitcoin-cli generatetoaddress
+
+% BTC, BTC-RPC, getblocktemplate
+# If the request parameters include a ‘mode’ key, that is used to explicitly select between the default ‘template’ request or a ‘proposal’.
+bitcoin-cli getblocktemplate <arg_1> <arg_2>
+
+% BTC, BTC-RPC, getmininginfo
+# Returns a json object containing mining-related information.
+bitcoin-cli getmininginfo
+
+% BTC, BTC-RPC, getnetworkhashps
+# Returns the estimated network hashes per second based on the last n blocks.
+bitcoin-cli getnetworkhashps
+
+% BTC, BTC-RPC, prioritisetransaction
+# Accepts the transaction into mined blocks at a higher (or lower) priority
+bitcoin-cli prioritisetransaction <arg_1> <arg_2> <arg_3>
+
+% BTC, BTC-RPC, submitblock
+# Attempts to submit new block to network.
+bitcoin-cli submitblock <arg_1>
+
+% BTC, BTC-RPC, submitheader
+# Decode the given hexdata as a header and submit it as a candidate chain tip if valid.
+bitcoin-cli submitheader <arg_1>
+
+% BTC, BTC-RPC, addnode
+# Attempts to add or remove a node from the addnode list.
+bitcoin-cli addnode <arg_1> <arg_2>
+
+% BTC, BTC-RPC, clearbanned
+# Clear all banned IPs.
+bitcoin-cli clearbanned
+
+% BTC, BTC-RPC, disconnectnode
+# Immediately disconnects from the specified peer node.
+bitcoin-cli disconnectnode <arg_1>
+
+% BTC, BTC-RPC, getaddednodeinfo
+# Returns information about the given added node, or all added nodes (note that onetry addnodes are not listed here)
+bitcoin-cli getaddednodeinfo <arg_1>
+
+% BTC, BTC-RPC, getconnectioncount
+# Returns the number of connections to other nodes.
+bitcoin-cli getconnectioncount
+
+% BTC, BTC-RPC, getnettotals
+# Returns information about network traffic, including bytes in, bytes out, and current time.
+bitcoin-cli getnettotals
+
+% BTC, BTC-RPC, getnetworkinfo
+# Returns an object containing various state info regarding P2P networking.
+bitcoin-cli getnetworkinfo
+
+% BTC, BTC-RPC, getnodeaddresses
+# Return known addresses which can potentially be used to find new nodes in the network
+bitcoin-cli getnodeaddresses <arg_1>
+
+% BTC, BTC-RPC, getpeerinfo
+# Returns data about each connected network node as a json array of objects.
+bitcoin-cli getpeerinfo
+
+% BTC, BTC-RPC, listbanned
+# List all banned IPs/Subnets.
+bitcoin-cli listbanned
+
+% BTC, BTC-RPC, ping
+# Requests that a ping be sent to all other nodes, to measure ping time.
+bitcoin-cli ping
+
+% BTC, BTC-RPC, setban
+# Attempts to add or remove an IP/Subnet from the banned list.
+bitcoin-cli setban <arg_1> <arg_2> <arg_3>
+
+% BTC, BTC-RPC, setnetworkactive
+# Disable/enable all p2p network activity.
+bitcoin-cli setnetworkactive
+
+% BTC, BTC-RPC, analyzepsbt
+# Analyzes and provides information about the current status of a PSBT and its inputs
+bitcoin-cli analyzepsbt <arg_1>
+
+% BTC, BTC-RPC, combinepsbt
+# Combine multiple partially signed Bitcoin transactions into one transaction.
+bitcoin-cli combinepsbt <arg_1> <arg_2> <arg_3>
+
+% BTC, BTC-RPC, combinerawtransaction
+# Combine multiple partially signed transactions into one transaction.
+bitcoin-cli combinerawtransaction <arg_1> <arg_2> <arg_3>
+
+% BTC, BTC-RPC, converttopsbt
+# Converts a network serialized transaction to a PSBT. This should be used only with createrawtransaction and fundrawtransaction createpsbt and walletcreatefundedpsbt should be used for new applications.
+bitcoin-cli converttopsbt
+
+% BTC, BTC-RPC, createpsbt
+# Creates a transaction in the Partially Signed Transaction format.
+bitcoin-cli createpsbt <arg_1> <arg_2>
+
+% BTC, BTC-RPC, createrawtransaction
+# Create a transaction spending the given inputs and creating new outputs.
+bitcoin-cli createrawtransaction <arg_1> <arg_2>
+
+% BTC, BTC-RPC, decodepsbt
+# Return a JSON object representing the serialized, base64-encoded partially signed Bitcoin transaction.
+bitcoin-cli decodepsbt <arg_1>
+
+% BTC, BTC-RPC, decoderawtransaction
+# Return a JSON object representing the serialized, hex-encoded transaction.
+bitcoin-cli decoderawtransaction <arg_1>
+
+% BTC, BTC-RPC, decodescript
+# Decode a hex-encoded script.
+bitcoin-cli decodescript <arg_1>
+
+% BTC, BTC-RPC, finalizepsbt
+# Finalize the inputs of a PSBT. If the transaction is fully signed, it will produce a network serialized transaction which can be broadcast with sendrawtransaction. Otherwise a PSBT will be created which has the final_scriptSig and final_scriptWitness fields filled for inputs that are complete.
+bitcoin-cli finalizepsbt <arg_1>
+
+% BTC, BTC-RPC, fundrawtransaction
+# Add inputs to a transaction until it has enough in value to meet its out value.
+bitcoin-cli fundrawtransaction
+
+% BTC, BTC-RPC, getrawtransaction
+# Return the raw transaction data.
+bitcoin-cli getrawtransaction <arg_1>
+
+% BTC, BTC-RPC, joinpsbts
+# Joins multiple distinct PSBTs with different inputs and outputs into one PSBT with inputs and outputs from all of the PSBTs No input in any of the PSBTs can be in more than one of the PSBTs.
+bitcoin-cli joinpsbts <arg_1>
+
+% BTC, BTC-RPC, sendrawtransaction
+# Submits raw transaction (serialized, hex-encoded) to local node and network.
+bitcoin-cli sendrawtransaction
+
+% BTC, BTC-RPC, signrawtransactionwithkey
+# Sign inputs for raw transaction (serialized, hex-encoded).
+bitcoin-cli signrawtransactionwithkey <arg_1>
+
+% BTC, BTC-RPC, testmempoolaccept
+# Returns result of mempool acceptance tests indicating if raw transaction (serialized, hex-encoded) would be accepted by mempool.
+bitcoin-cli testmempoolaccept
+
+% BTC, BTC-RPC, utxoupdatepsbt
+# Updates a PSBT with witness UTXOs retrieved from the UTXO set or the mempool.
+bitcoin-cli utxoupdatepsbt <arg_1>
+
+% BTC, BTC-RPC, createmultisig
+# Creates a multi-signature address with n signature of m keys required.
+bitcoin-cli createmultisig
+
+% BTC, BTC-RPC, deriveaddresses
+# Derives one or more addresses corresponding to an output descriptor.
+bitcoin-cli deriveaddresses
+
+% BTC, BTC-RPC, estimatesmartfee
+# Estimates the approximate fee per kilobyte needed for a transaction to begin confirmation within conf_target blocks if possible and return the number of blocks for which the estimate is valid. Uses virtual transaction size as defined in BIP 141 (witness data is discounted).
+bitcoin-cli estimatesmartfee <arg_1>
+
+% BTC, BTC-RPC, getdescriptorinfo
+# Analyses a descriptor.
+bitcoin-cli getdescriptorinfo
+
+% BTC, BTC-RPC, signmessagewithprivkey
+# Sign a message with the private key of an address
+bitcoin-cli signmessagewithprivkey
+
+% BTC, BTC-RPC, validateaddress
+# Return information about the given bitcoin address.
+bitcoin-cli validateaddress <arg_1>
+
+% BTC, BTC-RPC, verifymessage
+# Verify a signed message
+bitcoin-cli verifymessage
+
+% BTC, BTC-RPC, abandontransaction
+# Mark in-wallet transaction <txid> as abandoned This will mark this transaction and all its in-wallet descendants as abandoned which will allow for their inputs to be respent.  It can be used to replace “stuck” or evicted transactions.
+bitcoin-cli abandontransaction <arg_1>
+
+% BTC, BTC-RPC, abortrescan
+# Stops current wallet rescan triggered by an RPC call, e.g. by an importprivkey call.
+bitcoin-cli abortrescan
+
+% BTC, BTC-RPC, addmultisigaddress
+# Add a nrequired-to-sign multisignature address to the wallet. Requires a new wallet backup.
+bitcoin-cli addmultisigaddress
+
+% BTC, BTC-RPC, backupwallet
+# Safely copies current wallet file to destination, which can be a directory or a path with filename.
+bitcoin-cli backupwallet <arg_1>
+
+% BTC, BTC-RPC, bumpfee
+# Bumps the fee of an opt-in-RBF transaction T, replacing it with a new transaction B.
+bitcoin-cli bumpfee
+
+% BTC, BTC-RPC, createwallet
+# Creates and loads a new wallet.
+bitcoin-cli createwallet <arg_1>
+
+% BTC, BTC-RPC, dumpprivkey
+# Reveals the private key corresponding to ‘address’.
+bitcoin-cli dumpprivkey <arg_1>
+
+% BTC, BTC-RPC, dumpwallet
+# Dumps all wallet keys in a human-readable format to a server-side file. This does not allow overwriting existing files.
+bitcoin-cli dumpwallet <arg_1>
+
+% BTC, BTC-RPC, encryptwallet
+# Encrypts the wallet with ‘passphrase’. This is for first time encryption.
+bitcoin-cli encryptwallet
+
+% BTC, BTC-RPC, getaddressesbylabel
+# Returns the list of addresses assigned the specified label.
+bitcoin-cli getaddressesbylabel <arg_1>
+
+% BTC, BTC-RPC, getaddressinfo
+# Return information about the given bitcoin address. Some information requires the address to be in the wallet.
+bitcoin-cli getaddressinfo <arg_1>
+
+% BTC, BTC-RPC, getbalance
+# Returns the total available balance.
+bitcoin-cli getbalance
+
+% BTC, BTC-RPC, getnewaddress
+# Returns a new Bitcoin address for receiving payments.
+bitcoin-cli getnewaddress
+
+% BTC, BTC-RPC, getrawchangeaddress
+# Returns a new Bitcoin address, for receiving change.
+bitcoin-cli getrawchangeaddress
+
+% BTC, BTC-RPC, getreceivedbyaddress
+# Returns the total amount received by the given address in transactions with at least minconf confirmations.
+bitcoin-cli getreceivedbyaddress
+
+% BTC, BTC-RPC, getreceivedbylabel
+# Returns the total amount received by addresses with <label> in transactions with at least [minconf] confirmations.
+bitcoin-cli getreceivedbylabel
+
+% BTC, BTC-RPC, gettransaction
+# Get detailed information about in-wallet transaction <txid>
+bitcoin-cli gettransaction <arg_1>
+
+% BTC, BTC-RPC, getunconfirmedbalance
+# Returns the server’s total unconfirmed balance
+bitcoin-cli getunconfirmedbalance
+
+% BTC, BTC-RPC, getwalletinfo
+# Returns an object containing various wallet state info.
+bitcoin-cli getwalletinfo
+
+% BTC, BTC-RPC, importaddress
+# Adds an address or script (in hex) that can be watched as if it were in your wallet but cannot be used to spend. Requires a new wallet backup.
+bitcoin-cli importaddress
+
+% BTC, BTC-RPC, importmulti
+# Import addresses/scripts (with private or public keys, redeem script (P2SH)), optionally rescanning the blockchain from the earliest creation time of the imported scripts. Requires a new wallet backup.
+bitcoin-cli importmulti <arg_1> <arg_2> <arg_3> <arg_4> <arg_5> <arg_6> <arg_7> <arg_8> <arg_9> <arg_10> <arg_11> <arg_12> <arg_13> <arg_14> <arg_15> <arg_16> <arg_17> <arg_18> <arg_19> <arg_20> <arg_21> <arg_22> <arg_23>
+
+% BTC, BTC-RPC, importprivkey
+# Adds a private key (as returned by dumpprivkey) to your wallet. Requires a new wallet backup.
+bitcoin-cli importprivkey
+
+% BTC, BTC-RPC, importprunedfunds
+# Imports funds without rescan. Corresponding address or script must previously be included in wallet. Aimed towards pruned wallets. The end-user is responsible to import additional transactions that subsequently spend the imported outputs or rescan after the point in the blockchain the transaction is included.
+bitcoin-cli importprunedfunds
+
+% BTC, BTC-RPC, importpubkey
+# Adds a public key (in hex) that can be watched as if it were in your wallet but cannot be used to spend. Requires a new wallet backup.
+bitcoin-cli importpubkey
+
+% BTC, BTC-RPC, importwallet
+# Imports keys from a wallet dump file (see dumpwallet). Requires a new wallet backup to include imported keys.
+bitcoin-cli importwallet
+
+% BTC, BTC-RPC, keypoolrefill
+# Fills the keypool.
+bitcoin-cli keypoolrefill
+
+% BTC, BTC-RPC, listaddressgroupings
+# Lists groups of addresses which have had their common ownership made public by common use as inputs or as the resulting change in past transactions
+bitcoin-cli listaddressgroupings
+
+% BTC, BTC-RPC, listlabels
+# Returns the list of all labels, or labels that are assigned to addresses with a specific purpose.
+bitcoin-cli listlabels
+
+% BTC, BTC-RPC, listlockunspent
+# Returns list of temporarily unspendable outputs.
+bitcoin-cli listlockunspent
+
+% BTC, BTC-RPC, listreceivedbyaddress
+# List balances by receiving address.
+bitcoin-cli listreceivedbyaddress
+
+% BTC, BTC-RPC, listreceivedbylabel
+# List received transactions by label.
+bitcoin-cli listreceivedbylabel
+
+% BTC, BTC-RPC, listsinceblock
+# Get all transactions in blocks since block [blockhash], or all transactions if omitted.
+bitcoin-cli listsinceblock
+
+% BTC, BTC-RPC, listtransactions
+# If a label name is provided, this will return only incoming transactions paying to addresses with the specified label.
+bitcoin-cli listtransactions
+
+% BTC, BTC-RPC, listunspent
+# Returns array of unspent transaction outputs
+with between minconf and maxconf (inclusive) confirmations.
+bitcoin-cli listunspent
+
+% BTC, BTC-RPC, listwalletdir
+# Returns a list of wallets in the wallet directory.
+bitcoin-cli listwalletdir
+
+% BTC, BTC-RPC, listwallets
+# Returns a list of currently loaded wallets.
+bitcoin-cli listwallets
+
+% BTC, BTC-RPC, loadwallet
+# Loads a wallet from a wallet file or directory.
+bitcoin-cli loadwallet <arg_1>
+
+% BTC, BTC-RPC, lockunspent
+# Updates list of temporarily unspendable outputs.
+bitcoin-cli lockunspent
+
+% BTC, BTC-RPC, removeprunedfunds
+# Deletes the specified transaction from the wallet. Meant for use with pruned wallets and as a companion to importprunedfunds. This will affect wallet balances.
+bitcoin-cli removeprunedfunds <arg_1>
+
+% BTC, BTC-RPC, rescanblockchain
+# Rescan the local blockchain for wallet related transactions.
+bitcoin-cli rescanblockchain <arg_1> <arg_2>
+
+% BTC, BTC-RPC, sendmany
+# Send multiple times. Amounts are double-precision floating point numbers.
+bitcoin-cli sendmany
+
+% BTC, BTC-RPC, sendtoaddress
+# Send an amount to a given address.
+bitcoin-cli sendtoaddress <arg_1> <arg_2>
+
+% BTC, BTC-RPC, sethdseed
+# Set or generate a new HD wallet seed. Non-HD wallets will not be upgraded to being a HD wallet. Wallets that are already HD will have a new HD seed set so that new keys added to the keypool will be derived from this new seed.
+bitcoin-cli sethdseed
+
+% BTC, BTC-RPC, setlabel
+# Sets the label associated with the given address.
+bitcoin-cli setlabel <arg_1> <arg_2>
+
+% BTC, BTC-RPC, settxfee
+# Set the transaction fee per kB for this wallet. Overrides the global -paytxfee command line parameter.
+bitcoin-cli settxfee <arg_1>
+
+% BTC, BTC-RPC, signmessage
+# Sign a message with the private key of an address
+bitcoin-cli signmessage
+
+% BTC, BTC-RPC, signrawtransactionwithwallet
+# Sign inputs for raw transaction (serialized, hex-encoded).
+bitcoin-cli signrawtransactionwithwallet <arg_1>
+
+% BTC, BTC-RPC, unloadwallet
+# Unloads the wallet referenced by the request endpoint otherwise unloads the wallet specified in the argument.
+bitcoin-cli unloadwallet <arg_1>
+
+% BTC, BTC-RPC, walletcreatefundedpsbt
+# Creates and funds a transaction in the Partially Signed Transaction format. Inputs will be added if supplied inputs are not enough Implements the Creator and Updater roles.
+bitcoin-cli walletcreatefundedpsbt
+
+% BTC, BTC-RPC, walletlock
+# Removes the wallet encryption key from memory, locking the wallet.
+bitcoin-cli walletlock
+
+% BTC, BTC-RPC, walletpassphrase
+# Stores the wallet decryption key in memory for ‘timeout’ seconds.
+bitcoin-cli walletpassphrase
+
+% BTC, BTC-RPC, walletpassphrasechange
+# Changes the wallet passphrase from ‘oldpassphrase’ to ‘newpassphrase’.
+bitcoin-cli walletpassphrasechange <arg_1> <arg_2> <arg_3> <arg_4>
+
+% BTC, BTC-RPC, walletprocesspsbt
+# Update a PSBT with input information from our wallet and then sign inputs that we can sign for.
+bitcoin-cli walletprocesspsbt <arg_1>

@@ -1,8 +1,0 @@
-
-% bit, bitcoin-cli
-
-# Get new address for new label
-bitcoin-cli -datadir=./data getnewaddress <label>
-
-# Get network info
-bitcoin-cli -datadir=./data getnetworkinfo | jq .
