@@ -511,3 +511,6 @@ bitcoin-cli walletpassphrasechange <arg_1> <arg_2> <arg_3> <arg_4>
 % BTC, BTC-RPC, walletprocesspsbt
 # Update a PSBT with input information from our wallet and then sign inputs that we can sign for.
 bitcoin-cli walletprocesspsbt <arg_1>
+
+% BTC, BTC-RPC, decodetransaction
+bitcoin-cli getrawtransaction <txid> | bitcoin-cli decoderawtransaction
