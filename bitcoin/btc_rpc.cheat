@@ -125,7 +125,7 @@ bitcoin-cli generate
 
 % BTC, BTC-RPC, generatetoaddress
 # Mine blocks immediately to a specified address (before the RPC call returns)
-bitcoin-cli generatetoaddress
+bitcoin-cli generatetoaddress <amount> <address>
 
 % BTC, BTC-RPC, getblocktemplate
 # If the request parameters include a ‘mode’ key, that is used to explicitly select between the default ‘template’ request or a ‘proposal’.
